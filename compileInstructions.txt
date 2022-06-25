@@ -1,0 +1,5 @@
+gcc coreGame.c -c -o coreGame.o
+gcc interfaceHandler.c -o interfaceHandler.o -c
+gcc highScoreHandler.c -o highScoreHandler.o -c
+gcc coreGame.o interfaceHandler.o highScoreHandler.o main.c -o main.o -lncurses
+./main.o
